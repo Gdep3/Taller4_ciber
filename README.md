@@ -1,4 +1,4 @@
-#Taller 4 CIBER:
+# Taller 4 CIBER:
 Abre una terminal en Kali Linux y ejecuta los siguientes bloques de comandos en orden:
 
 ### Crear los directorios del proyecto
