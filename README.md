@@ -1,9 +1,10 @@
-# Taller 4 CIBER:
+# Taller 4 CIBER
+
 Abre una terminal en Kali Linux y ejecuta los siguientes bloques de comandos en orden:
 
-### Crear los directorios del proyecto
+### Clonar el repositorio
 ```bash
-mkdir -p ~/taller4_phishing/templates
+git clone https://github.com/Gdep3/Taller4_ciber.git ~/taller4_phishing
 cd ~/taller4_phishing
 ```
 
@@ -19,18 +20,12 @@ source venv/bin/activate
 pip install flask
 ```
 
-### Crear el archivo del servidor (`app.py`)
-Ejecuta el editor `nano` en la raíz del proyecto:
+### Ejecutar el servidor
 ```bash
-nano app.py
+python3 app.py
 ```
-Pegar el archivo app.py, guarda con `Ctrl + O`, presiona `Enter` y sal con `Ctrl + X`:
+Abre Firefox dentro de Kali y entra a http://127.0.0.1:5000
 
-### Crear la plantilla HTML (`templates/index.html`)
-Ejecuta `nano` asegurándote de guardarlo dentro del directorio `templates/`:
-```bash
-nano templates/index.html
-```
-Pega el código HTML, guarda con `Ctrl + O`, presiona `Enter` y sal con `Ctrl + X`:
+### Solución de problemas
 * **Error `500 Internal Server Error` en el navegador:**
-  Ocurre cuando Flask no encuentra `index.html`. Detén el servidor (`Ctrl + C`), verifica que la carpeta se llame exactamente `templates` (en minúsculas y plural) y que `index.html` esté adentro (`ls templates/`).
+  Flask no encuentra `index.html`. Detén el servidor (`Ctrl + C`) y verifica que `index.html` esté dentro de la carpeta `templates/` (`ls templates/`).
